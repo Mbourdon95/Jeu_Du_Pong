@@ -16,8 +16,7 @@ Windows:
 
 ## Setup Pour Le Developpement
 
-Il eut fallu, afin de mener à bien le projet, l'import de quelque bibliothèques, notamment pour développer aisément l'aspect graphique du jeu.
-La Bibliothèque Random pour faire du spawn pick aléatoire de la pomme par exemple.
+Il eut fallu, afin de mener à bien le projet, l'import de quelque pictureBox, pour obtenir les palets de jeu ainsi que la balle.
 
 ```sh
 Téléchargement de différentes picture Box.
@@ -37,6 +36,14 @@ Téléchargement de différentes picture Box.
     * Fixation : Changement Taille de la Pomme, bug de Collision.
 * 0.1.0
     * Premiere Version.
+    
+     ```csharp
+    for (int i = 0 ; i < 10; i++)
+    {
+      // Code to execute.
+    }
+    ```
+    
     * Changement: Renommer Event() en Test()
     * Fixation : La Vitesse Maximale Du Serpent.
     * Fixation : Ajout D'une nouvelle sphère Au serpent après Eat de la pomme. 
@@ -44,14 +51,11 @@ Téléchargement de différentes picture Box.
     * Ajout des Définitions de Event() : Re-Spawn des Pommes et Accélération du Serpent
 ## Future Version 
 
+* 0.5.0
+    * ajout : Ajout d'une page d'accueil (un autre Windows Forms).
 * 0.4.0
     * ajout : Une Base De Donnée qui gère Les scores de chaque joueur.
     avec un système classement.
-* 0.3.5
-    * ajout : Ajout des Collision sur les parties Du Serpent
-    * ajout : Revoir les Collisions sur la Pomme
-    
-
 
 ## Meta
 
