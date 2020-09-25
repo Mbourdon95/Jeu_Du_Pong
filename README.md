@@ -109,28 +109,27 @@ Enfin, on code la gestion de la victoire d'un des joueurs.
 ![Capture1](https://user-images.githubusercontent.com/71081511/94305002-d0a33b80-ff70-11ea-8353-457d9e2121ef.PNG)
 ## Historique
 
-* 0.3.0
-    * ajout : Initialisation dans le Main()
-    * ajout : Du Contrôle Utilisateur.
 * 0.2.0
-    * ajout : Add newGame();
+    * Deuxième Version
+    * Fixation : Impossibilité d'envoyer Deux touches Au système sous Windows Forms
+    Pour contrer cela, le palet gauche ne peut se mouvoir que lorsque la balle est dans son camp.
+    Possibillité d'utiliser des bibliothèques comme DirectX également pour contrer ce problème.
 * 0.1.5
-    * ajout : Définition Des Event de Mouvement(Variable global)
+    * ajout : Audio pour agrémenter le plaisir de jeu.
 * 0.1.1
-    * ajout : Définition du Serpent, de la Pomme, et des déplacement.
-    * Fixation : Changement Taille de la Pomme, bug de Collision.
+    * ajout : Gestion de EndGame et RestartGame et Gestion des label De score.
+    * Fixation : Gestion des Collisions de la balles sur les plaets et les murs 
 * 0.1.0
     * Premiere Version.
-    * Changement: Renommer Event() en Test()
-    * Fixation : La Vitesse Maximale Du Serpent.
-    * Fixation : Ajout D'une nouvelle sphère Au serpent après Eat de la pomme. 
+    * Changement: Augmenter la vitesse de la balle par tick, de 10 a 20.
+    * Ajout des palets et mise en forme de l'écran
 * 0.0.1
-    * Ajout des Définitions de Event() : Re-Spawn des Pommes et Accélération du Serpent
+    * Ajout des méthodes de changement de couleurs de balle pars un événement click
 ## Future Version 
 
-* 0.5.0
-    * ajout : Ajout d'une page d'accueil (un autre Windows Forms).
 * 0.4.0
+    * ajout : Ajout d'une page d'accueil (un autre Windows Forms).
+* 0.3.0
     * ajout : Une Base De Donnée qui gère Les scores de chaque joueur.
     avec un système classement.
 
