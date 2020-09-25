@@ -1,9 +1,8 @@
 # Jeu_Du_Pong
 > Jeu Multijoueur (2 players)
 
-il s'agit d'une reprise fidèle d'un jeu fondamental : Le pong.
+il s'agit d'une reprise fidèle d'un jeu fondamental : Le pong. ![Capture](https://user-images.githubusercontent.com/71081511/94304996-ced97800-ff70-11ea-93df-795dc9e2df52.PNG)
 
-![Capture10](https://user-images.githubusercontent.com/71081511/94153172-bc7e1200-fe7c-11ea-9596-d74071e97f64.PNG)
 
 ## Accès
 
@@ -107,6 +106,7 @@ Enfin, on code la gestion de la victoire d'un des joueurs.
             }
 ```
 
+![Capture1](https://user-images.githubusercontent.com/71081511/94305002-d0a33b80-ff70-11ea-8353-457d9e2121ef.PNG)
 ## Historique
 
 * 0.3.0
