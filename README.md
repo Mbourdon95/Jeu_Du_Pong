@@ -1,31 +1,31 @@
-# Jeu_Du_Pong
-> Jeu Multijoueur (2 players)
+# Pong_Game
+> Multiplayer game (2 players)
 
-il s'agit d'une reprise fidèle d'un jeu fondamental : Le pong. ![Capture](https://user-images.githubusercontent.com/71081511/94304996-ced97800-ff70-11ea-93df-795dc9e2df52.PNG)
+it is a faithful revival of a fundamental game: Pong. ! [Capture](https://user-images.githubusercontent.com/71081511/94304996-ced97800-ff70-11ea-93df-795dc9e2df52.PNG)
 
 
-## Accès
+## Access
 
 OS X & Linux:
-(Bientôt Disponible)
+(Coming soon)
 
 Windows:
-(Bientôt Disponible)
+(Coming soon)
 
 
-## Setup Pour Le Developpement
+## Setup For Development
 
-Il eut fallu, afin de mener à bien le projet, l'import de quelque pictureBox, pour obtenir les palets de jeu ainsi que la balle.
+In order to complete the project, it would have been necessary to import some pictureBox, to obtain the pucks as well as the ball.
 
 ```csharp
 using System.Media;
 ```
 
-On ajoute Ce using pour pouvoir, à la fin de notre code ajouter des sons par exemple pour un ajout de point, une victoire.
+We add Ce using to be able, at the end of our code add sounds for example for a point addition, a victory.
 
 ### Conception :
 Il faut tout d'abord récupérer la localisation de notre balle (déclarer en tant que pictureBox1)
-On Utilise un timer pour pousser notre PictureBow a avoir un mouvement constant.
+On Utilise un timer pour pousser notre PictureBox a avoir un mouvement constant.
 
 ```csharp
  private void timer1_Tick(object sender, EventArgs e)
@@ -39,11 +39,11 @@ On Utilise un timer pour pousser notre PictureBow a avoir un mouvement constant.
         }
 ```
 
-Ensuite ! Nous devons gérer les rebond de cette Balle afin qu'elle ne sorte pas de l'écran.
-Dans cette Application, on le gère de manière statique et non dynamique. 
-(C'est-à-dire que l'on connaît les dimmensions de notre fenêtre)
-Lors du rebond le score du joueur est agrémenter.
-On fait la même chose de bas en HAut en gérant cette fois-ci Y.
+Then! We have to manage the rebound of this Ball so that it does not leave the screen.
+In this Application, it is managed statically and not dynamically.
+(That is, we know the dimensions of our window)
+When bouncing the player’s score is enhanced.
+We’re doing the same thing down in HAut by managing this time Y.
 
 ```csharp
             if (x > 1263)
@@ -61,9 +61,9 @@ On fait la même chose de bas en HAut en gérant cette fois-ci Y.
                 Score_Joueur2.Text = Convert.ToString(score + 1);
             }
 ```
-On ajoute les rebonds sur palet.
-Ajout d'une fonctionnalité : La balle change de couleur lors d'une touche d'un jeu.
-Pour le faire on change simplement la pictureBox lors d'une touche.
+We add the puck bounces.
+Adding a feature: The ball changes color with a touch of a game.
+To do this you simply change the pictureBox during a touch.
 
 ```csharp
             if(pictureBox1.Bounds.IntersectsWith(Joueur2.Bounds))
@@ -78,7 +78,7 @@ Pour le faire on change simplement la pictureBox lors d'une touche.
             }
 ```
 
-Enfin, on code la gestion de la victoire d'un des joueurs.
+Finally, we code the management of the victory of one of the players.
 
 ```csharp
 
@@ -107,31 +107,31 @@ Enfin, on code la gestion de la victoire d'un des joueurs.
 ```
 
 ![Capture1](https://user-images.githubusercontent.com/71081511/94305002-d0a33b80-ff70-11ea-8353-457d9e2121ef.PNG)
-## Historique
+## History
 
 * 0.2.0
-    * Deuxième Version
-    * Fixation : Impossibilité d'envoyer Deux touches Au système sous Windows Forms
-    Pour contrer cela, le palet gauche ne peut se mouvoir que lorsque la balle est dans son camp.
-    Possibillité d'utiliser des bibliothèques comme DirectX également pour contrer ce problème.
+* Second Version
+* Fixation: Unable to send Two Keys to Windows Forms System
+To counter this, the left puck can only move when the ball is in its court.
+Possibility of using libraries like DirectX also to counter this problem.
 * 0.1.5
-    * ajout : Audio pour agrémenter le plaisir de jeu.
+* addition: Audio to enhance the game fun.
 * 0.1.1
-    * ajout : Gestion de EndGame et RestartGame et Gestion des label De score.
-    * Fixation : Gestion des Collisions de la balles sur les plaets et les murs 
+* addition: EndGame and RestartGame management and Score label management.
+* Fixation: Management of Ball Collisions on Plaets and Walls
 * 0.1.0
-    * Premiere Version.
-    * Changement: Augmenter la vitesse de la balle par tick, de 10 a 20.
-    * Ajout des palets et mise en forme de l'écran
+* First Public Release.
+* Change: Increase the speed of the ball per tick from 10 to 20.
+* Adding palets and formatting the screen
 * 0.0.1
-    * Ajout des méthodes de changement de couleurs de balle pars un événement click
+* Added methods for changing ball colors start a click event
 ## Future Version 
 
 * 0.4.0
-    * ajout : Ajout d'une page d'accueil (un autre Windows Forms).
+    * added: Added a home page (another Windows Forms).
 * 0.3.0
-    * ajout : Une Base De Donnée qui gère Les scores de chaque joueur.
-    avec un système classement.
+    * addition: A Database that manages each player’s scores.
+    with a filing system.
 
 ## Meta
 
