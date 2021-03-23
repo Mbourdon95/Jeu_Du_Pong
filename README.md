@@ -21,7 +21,7 @@ In order to complete the project, it would have been necessary to import some pi
 using System.Media;
 ```
 
-We add Ce using to be able, at the end of our code add sounds for example for a point addition, a victory.
+We add this using to be able, at the end of our code add sounds for example for a point addition, a victory.
 
 ### Conception :
 Il faut tout d'abord récupérer la localisation de notre balle (déclarer en tant que pictureBox1)
@@ -34,8 +34,8 @@ On Utilise un timer pour pousser notre PictureBox a avoir un mouvement constant.
             // Le but étant de faire rebondir la balle sur les parois
             // du Group Box, afin d'avoir une balle autonome.
 
-            int x = pictureBox1.Location.X;
-            int y = pictureBox1.Location.Y;
+            int x = pb_balle.Location.X;
+            int y = pb_balle.Location.Y;
         }
 ```
 
@@ -66,15 +66,15 @@ Adding a feature: The ball changes color with a touch of a game.
 To do this you simply change the pictureBox during a touch.
 
 ```csharp
-            if(pictureBox1.Bounds.IntersectsWith(Joueur2.Bounds))
+            if(pb_balle.Bounds.IntersectsWith(pbPaletJoueur2.Bounds))
             {
                 sens_balle_x = - 20;
-                pictureBox1.Image = Properties.Resources.ball_magenta;
+                pb_balle.Image = Properties.Resources.ball_magenta;
             }
-            if (pictureBox1.Bounds.IntersectsWith(Joueur1.Bounds))
+            if (pb_balle.Bounds.IntersectsWith(pbPaletJoueur1.Bounds))
             {
                 sens_balle_x = 20;
-                pictureBox1.Image = Properties.Resources.ball_green;
+                pb_balle.Image = Properties.Resources.ball_green;
             }
 ```
 
